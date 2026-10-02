@@ -1,0 +1,84 @@
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">SUPPORT · 客服中心</span>
+    <h1 class="h1">有什么可以帮你？</h1>
+    <p class="body">常见问题即时解答；更复杂的问题可通过表单反馈，正式客服渠道 48 小时内回复。</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap support-grid">
+    <div id="faq">
+      <div class="section-head" style="margin-bottom:8px">
+        <div>
+          <span class="kicker">FAQ · 常见问题</span>
+          <h2 class="h2" style="margin-top:10px;font-size:28px">高频问题速查</h2>
+        </div>
+      </div>
+      <div data-faq></div>
+    </div>
+    <aside style="display:flex;flex-direction:column;gap:24px">
+      <!-- 充值查询 -->
+      <div class="trophy-card">
+        <h3 class="h3" style="font-size:16px">充值查询</h3>
+        <p class="small">输入订单号查询支付状态（演示）。</p>
+        <form data-pay-form class="form" style="gap:10px">
+          <div class="field">
+            <label for="pay-order">订单号</label>
+            <input id="pay-order" name="order" placeholder="例如 NOVA202609300001" autocomplete="off">
+          </div>
+          <button class="btn btn--ghost btn--sm" type="submit">查询订单</button>
+        </form>
+        <div data-pay-result></div>
+      </div>
+      <!-- 联系渠道 -->
+      <div class="trophy-card">
+        <h3 class="h3" style="font-size:16px">其他联系渠道</h3>
+        <p class="small">在线客服：每日 9:00 – 21:00（游戏内右上角「设置 → 客服」）<br>家长监护：可通过客服中心「家长监护」通道绑定<br>商务合作：bd@nova-arena.example（演示邮箱）</p>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- 问题反馈 -->
+<section class="section">
+  <div class="wrap" style="max-width:760px">
+    <div class="section-head">
+      <div>
+        <span class="kicker">FEEDBACK · 问题反馈</span>
+        <h2 class="h2" style="margin-top:10px">提交你的问题</h2>
+      </div>
+    </div>
+    <form class="form" data-feedback-form>
+      <div class="form__row">
+        <div class="field">
+          <label for="fb-type">问题类型</label>
+          <select id="fb-type" name="type">
+            <option>账号与安全</option>
+            <option>充值与消费</option>
+            <option>对局体验</option>
+            <option>举报外挂 / 演员</option>
+            <option>其他</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fb-gameid">游戏 ID</label>
+          <input id="fb-gameid" name="gameid" placeholder="例如 星曜召唤师#12345" autocomplete="off">
+        </div>
+      </div>
+      <div class="field">
+        <label for="fb-contact">联系方式（邮箱 / 手机号）</label>
+        <input id="fb-contact" name="contact" placeholder="用于接收回复" autocomplete="off">
+      </div>
+      <div class="field">
+        <label for="fb-detail">问题描述</label>
+        <textarea id="fb-detail" name="detail" placeholder="请描述问题发生的时间、对局模式与具体情况；如涉及异常可附上截图编号"></textarea>
+      </div>
+      <div>
+        <button class="btn btn--gold" type="submit">提交反馈</button>
+      </div>
+      <div data-form-result aria-live="polite"></div>
+      <p class="small">提交即表示同意《<a href="privacy.html" style="text-decoration:underline">隐私政策</a>》中关于反馈信息处理的条款。</p>
+    </form>
+  </div>
+</section>

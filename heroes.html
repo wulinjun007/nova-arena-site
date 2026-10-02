@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英雄图鉴 — NOVA ARENA 星曜竞技场</title>
+<meta name="description" content="12 位星曜英雄：坦克、战士、刺客、法师、射手、辅助，技能与背景故事一览。">
+<meta property="og:title" content="{{TITLE}}">
+<meta property="og:description" content="{{DESC}}">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到主要内容</a>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="NOVA ARENA 星曜竞技场 首页">
+      <img src="assets/img/logo.svg" alt="" width="28" height="28">
+      <span>NOVA ARENA</span><span class="brand__cn">星曜竞技场</span>
+    </a>
+    <nav class="nav__links" aria-label="主导航">
+      <a href="index.html">首页</a>
+      <a href="news.html">资讯</a>
+      <a href="heroes.html">英雄</a>
+      <a href="esports.html">赛事</a>
+      <a href="guide.html">攻略</a>
+      <a href="support.html">客服</a>
+    </nav>
+    <a class="btn btn--white btn--sm nav__cta" href="index.html#download">下载游戏</a>
+    <button class="nav__burger" aria-label="打开菜单" aria-expanded="false">
+      <svg viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M2 4.5h14M2 9h14M2 13.5h14"/></svg>
+    </button>
+  </div>
+</header>
+<div class="drawer">
+  <a href="index.html">首页</a>
+  <a href="news.html">资讯</a>
+  <a href="heroes.html">英雄</a>
+  <a href="esports.html">赛事</a>
+  <a href="guide.html">攻略</a>
+  <a href="support.html">客服</a>
+  <a href="index.html#download">下载游戏</a>
+</div>
+
+<main id="main">
+<section class="page-hero">
+  <div class="wrap">
+    <span class="kicker">HEROES · 英雄图鉴</span>
+    <h1 class="h1">星曜英雄</h1>
+    <p class="body">12 位英雄，6 大职业。点击英雄查看背景故事、属性与技能详情。</p>
+  </div>
+</section>
+
+<section class="section--tight" style="padding-top:40px">
+  <div class="wrap">
+    <div class="filter-row" data-filter-row role="tablist" aria-label="职业筛选"></div>
+    <div class="hero-grid" data-heroes-grid></div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <img src="assets/img/logo.svg" alt="" width="28" height="28">
+          <span>NOVA ARENA</span><span class="brand__cn">星曜竞技场</span>
+        </a>
+        <p>5V5 公平竞技手游。当群星合唱时，裂隙将为之敞开。当前版本 <span class="mono" id="nav-version">v0.55</span>。</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook（演示链接）"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.6c0-.9.3-1.6 1.7-1.6H16.7V4.2c-.3 0-1.3-.2-2.4-.2-2.4 0-4 1.4-4 4.1v2.4H7.8v3h2.5V21h3.2Z"/></svg></a>
+          <a href="#" aria-label="X / Twitter（演示链接）"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.8 3h3l-6.7 7.7L22 21h-6.2l-4.8-6.3L5.4 21h-3l7.2-8.2L2 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z"/></svg></a>
+          <a href="#" aria-label="YouTube（演示链接）"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.5 2.5 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.5 2.5 0 0 0 2.4 7.2 26 26 0 0 0 2 12a26 26 0 0 0 .4 4.8 2.5 2.5 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.5 2.5 0 0 0 1.8-1.8A26 26 0 0 0 22 12a26 26 0 0 0-.4-4.8ZM10 15.2V8.8l5.2 3.2L10 15.2Z"/></svg></a>
+          <a href="#" aria-label="Discord（演示链接）"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.3 5.3A16.6 16.6 0 0 0 15.2 4l-.5 1a15 15 0 0 0-5.4 0L8.8 4a16.6 16.6 0 0 0-4.1 1.3C2.1 9.2 1.4 13 1.7 16.7A16.8 16.8 0 0 0 6.9 20l1.1-1.8a10 10 0 0 1-1.7-.8l.4-.3a11.7 11.7 0 0 0 10.6 0l.4.3a10 10 0 0 1-1.7.8L17.1 20a16.8 16.8 0 0 0 5.2-3.3c.4-4.3-.7-8-3-11.4ZM8.7 14.4c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Zm6.6 0c-1 0-1.8-.9-1.8-2s.8-2 1.8-2 1.9.9 1.8 2c0 1.1-.8 2-1.8 2Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>游戏</h4>
+        <a href="heroes.html">英雄图鉴</a>
+        <a href="guide.html">新手攻略</a>
+        <a href="index.html#download">游戏下载</a>
+        <a href="news.html?cat=版本">版本更新</a>
+      </div>
+      <div class="footer__col">
+        <h4>赛事</h4>
+        <a href="esports.html">NOVA PRO LEAGUE</a>
+        <a href="esports.html#international">国际赛事</a>
+        <a href="esports.html#schedule">赛程中心</a>
+      </div>
+      <div class="footer__col">
+        <h4>支持</h4>
+        <a href="support.html">客服中心</a>
+        <a href="support.html#faq">常见问题</a>
+        <a href="terms.html">服务条款</a>
+        <a href="privacy.html">隐私政策</a>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="age-badge" aria-label="适合 12 岁以上">12+<small>AGE</small></div>
+      <div class="footer__legal">
+        <span>© <span id="year">2026</span> NOVA ARENA · 虚构演示项目</span>
+        <a href="terms.html">服务条款</a>
+        <a href="privacy.html">隐私政策</a>
+      </div>
+    </div>
+    <p class="footer__advice">健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。<br>本站为前端设计与设计系统复刻演示（参考 MOBA 游戏官网信息架构），非任何真实游戏的官方网站；所有游戏名称、英雄、赛事、新闻内容均为虚构。摄影素材来自 Unsplash（见 CREDITS.md）。</p>
+  </div>
+</footer>
+
+<a class="float-qa" href="support.html" aria-label="联系客服">
+  <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 3.5A1.5 1.5 0 0 1 3.5 2h9A1.5 1.5 0 0 1 14 3.5v6a1.5 1.5 0 0 1-1.5 1.5H8l-3.5 3v-3h-1A1.5 1.5 0 0 1 2 9.5v-6Z"/></svg>
+  客服
+</a>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
